@@ -25,7 +25,7 @@ if (!mysql_select_db($db_name))
     die("Can't select database");
 
 // sending query
-$result = mysql_query("SELECT memberNumber AS 'Member ID',memberName AS 'Name',memberPhone AS 'Phone Number' FROM {$tbl_name}");
+$result = mysql_query("SELECT memberNumber AS 'Member ID',memberName AS 'Name',role AS Role,memberPhone AS 'Phone Number' FROM {$tbl_name}");
 if (!$result) {
     die("Query to show fields from table failed");
 }
