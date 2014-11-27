@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -30,8 +24,7 @@
 			<li><a href="#">About</a></li>
 			<li><a href="#">Services</a></li>
 			<li><a href="#">Contact us</a></li>
-<li><a href="login.php">Login</a></span></li>
-
+			<li><a href="login.php">Login</a></span></li>
 		</ul>
 	</div>
 	<div id="content-container">
@@ -40,7 +33,6 @@
 				<li><a href="#">Gallery page 1</a></li>
 				<li><a href="#">Pictures page 2</a></li>
 				<li><a href="#">Instructors page 3</a></li>
-				
 			</ul>
 		</div>
 		<div id="content">
@@ -59,9 +51,7 @@
 		</div>
 		<div id="aside">
 			<h3>
-
-
-				<img src="http://farmstrong.ca/wp-content/uploads/2012/04/CnJ.png"style="width:200px;height:250px" 
+				<img src="http://farmstrong.ca/wp-content/uploads/2012/04/CnJ.png"style="width:200px;height:250px">
 			</h3>
 			<p>
 				

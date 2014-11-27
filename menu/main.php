@@ -6,7 +6,10 @@
     }
 ?>
 <html>
+<head>
 <title>Average Joe's | Main Menu</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
 <body>
 <h1>Main Menu</h1>
 <h2>Welcome, <?=$_SESSION["login_name"]?>!</h2>
