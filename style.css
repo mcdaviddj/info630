@@ -1,0 +1,125 @@
+body 
+{
+    background-color: #990012;
+}
+#container
+{
+    background-color: #990012;
+}
+#container
+{
+	margin: 0 auto;
+	width: 1000px;
+	background: #990012;
+}
+
+#header
+{
+	background: #990012;
+	padding: 20px;
+}
+
+#header h1 
+{
+	margin: 0;
+}
+
+#navigation
+{
+	float: left;
+	width: 1000px;
+	background: #000000;
+}
+
+#navigation ul
+{
+	margin: 0;
+	padding: 0;
+	background: #990012;
+}
+
+#navigation ul li
+{
+	list-style-type: none;
+	display: inline;
+background: #990012;
+}
+
+#navigation li a
+{
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid #990012;;
+}
+
+#navigation li a:hover { background: #990012; }
+
+#content-container
+{
+	float: left;
+	width: 1000px;
+	background: #EDB321
+}
+
+#section-navigation
+{
+	float: left;
+	width: 160px;
+	padding: 20px 0;
+	margin: 0 20px;
+	display: inline;
+}
+
+#section-navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#section-navigation ul li
+{
+	margin: 0 0 1em;
+	padding: 0;
+	list-style-type: none;
+}
+
+#content
+{
+	float: left;
+	width: 500px;
+	padding: 20px 0;
+	margin: 0 0 0 30px;
+background: #EDB321;
+}
+
+#content h2 { margin: 0; }
+
+#aside
+{
+	float: right;
+	width: 200px;
+	padding: 20px 0;
+	margin: 0 20px 0 0;
+	display: inline;
+
+}
+
+#aside h3 { margin: 0; }
+
+#footer
+{
+	clear: left;
+	background: #000000;
+	text-align: right;
+	padding: 20px;
+	height: 1%;
+
+}
+
+p
+{
+	font-family: "Arial", Arial;
+}
