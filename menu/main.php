@@ -24,7 +24,7 @@
 
 	// Member View
 	if($_SESSION["login_role"] == member) {
-		echo '<a href="../class/select.php">View Available Classes</a><br>';
+		echo '<a href="../offerings/view.php">View Available Classes</a><br>';
 	}
 
 	// Instructor View
@@ -41,7 +41,7 @@
 	if($_SESSION["login_role"] == admin) {
 		echo '<a href="../members/view.php">Manage Members</a><br>';
 		echo '<a href="../class/view.php">Manage Classes</a><br>';
-		echo '<a href="../class/select.php">View Available Classes</a><br>';
+		echo '<a href="../offerings/view.php">View Available Classes</a><br>';
 		echo '<a href ="../instructor/avail.php">Manage Availablity</a><br>';
 	}
 ?>
