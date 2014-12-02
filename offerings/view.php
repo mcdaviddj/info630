@@ -32,7 +32,7 @@ if($_SESSION["loggedIn"] != true) {
 
     $fields_num = mysql_num_fields($result);
     echo 'Return to <a href="../menu/main.php">Main Menu</a><br>';
-    echo "Current Classes {$table}";
+    echo "Current Classes";
     echo "<table border='1'><tr>";
     
     // printing table headers
