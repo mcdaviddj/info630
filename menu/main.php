@@ -18,27 +18,27 @@
 <!-- Shows various menu options based on session variable 'login_role' -->
 <?php 
 	// Manager View
-	if($_SESSION["login_role"] == manager) {
+	if($_SESSION["login_role"] == 'manager') {
 		echo '<a href="../class/view.php">Manage Classes</a><br>';
 	}
 
 	// Member View
-	if($_SESSION["login_role"] == member) {
+	if($_SESSION["login_role"] == 'member') {
 		echo '<a href="../offerings/view.php">View Available Classes</a><br>';
 	}
 
 	// Instructor View
-	if($_SESSION["login_role"] == instructor) {
+	if($_SESSION["login_role"] == 'instructor') {
 		echo '<a href="../instructor/avail.php">Manage Availability</a><br>';
 	}
 
 	// Staff View
-	if($_SESSION["login_role"] == staff) {
+	if($_SESSION["login_role"] == 'staff') {
 		echo '<a href="../members/view.php">Manage Members</a><br>';
 	}
 
 	// Admin View (Shows all links for testing purposes)
-	if($_SESSION["login_role"] == admin) {
+	if($_SESSION["login_role"] == 'admin') {
 		echo '<a href="../members/view.php">Manage Members</a><br>';
 		echo '<a href="../class/view.php">Manage Classes</a><br>';
 		echo '<a href="../offerings/view.php">View Available Classes</a><br>';
