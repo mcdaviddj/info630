@@ -32,7 +32,6 @@ if (!$result) {
 
 $fields_num = mysql_num_fields($result);
 echo 'Return to <a href="../menu/main.php">Main Menu</a><br>';
-echo "{$table}";
 echo "<table border='1'><tr>";
 // printing table headers
 for($i=0; $i<$fields_num; $i++)

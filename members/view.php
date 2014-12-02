@@ -33,7 +33,7 @@ if($_SESSION["loggedIn"] != true) {
     $fields_num = mysql_num_fields($result);
     echo 'Return to <a href="../menu/main.php">Main Menu</a><br>';
     echo '<a href="add.php">Add</a> new member<br>';
-    echo "Current Members {$table}";
+    echo "Current Members:";
     echo "<table border='1'><tr>";
     
     // printing table headers
