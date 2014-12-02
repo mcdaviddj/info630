@@ -1,3 +1,4 @@
+<?session_start();?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -23,16 +24,16 @@
 			<li><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Services</a></li>
-			<li><a href="#">Contact us</a></li>
+			<li><a href="contact.php">Contact us</a></li>
 			<li><a href="login.php">Login</a></span></li>
+			<? if($_SESSION["loggedIn"] != false) {echo("<li><a href='menu/main.php'>Main Menu</a></span></li>");}?>
 		</ul>
 	</div>
 	<div id="content-container">
 		<div id="section-navigation">
 			<ul>
-				<li><a href="#">Gallery page 1</a></li>
-				<li><a href="#">Pictures page 2</a></li>
-				<li><a href="#">Instructors page 3</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Instructors</a></li>
 			</ul>
 		</div>
 		<div id="content">
