@@ -17,9 +17,9 @@
 	<div id="navigation">
 		<ul>
 			<li><a href="index.php">Home</a></span></li>
-			<li><a href="About.php">About</a></span></li>
-			<li><a href="Services.php">Services</a></span></li>
-			<li><a href="Contact.php">Contact</a></span></li>
+			<li><a href="about.php">About</a></span></li>
+			<li><a href="services.php">Services</a></span></li>
+			<li><a href="contact.php">Contact</a></span></li>
 			<li><a href="login.php">Login</a></span></li>
 
 
@@ -28,8 +28,8 @@
 	<div id="content-container">
 		<div id="section-navigation">
 			<ul>
-				<li><a href="Gallery.php">Gallery page 1</a></span></li>
-				<li><a href="Instructors.php">Instructors page 2</a></span></li>
+				<li><a href="gallery.php">Gallery</a></span></li>
+				<li><a href="instructors.php">Instructors</a></span></li>
 				
 			</ul>
 		</div>
