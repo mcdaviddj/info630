@@ -58,8 +58,14 @@
             echo "</tr>\n";
         }
 
+    echo "</table>";
     mysql_free_result($result);
 
 ?>
+<br>
+Delete Class ID:
+<form name="delete" method="post" action="delete.php">
+<input name="deleteClass" type="text" id="deleteClass">
+<input type="submit" name="Submit" value="Submit">
 </body>
 </html>

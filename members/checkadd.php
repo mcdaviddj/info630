@@ -36,8 +36,26 @@ $myusername = mysql_real_escape_string($myusername);
 $mypassword = mysql_real_escape_string($mypassword);
 $mymemberPhone = mysql_real_escape_string($mymemberPhone);
 
+// Determine initial balance
+$mymemberAccountBalance = 0;
 
-$sql="INSERT INTO $tbl_name (username,password,role,memberName,memberAccountBalance,memberPhone,membershipkey) VALUES ('$myusername','$mypassword','$myroleSelect','$mymemberName',0,'$mymemberPhone',$mymembershipSelect)";
+if($mymembershipSelect == 1){
+	$mymemberAccountBalance = 25;
+	}
+
+if($mymembershipSelect == 2){
+	$mymemberAccountBalance = 50;
+	}
+
+if($mymembershipSelect == 3){
+	$mymemberAccountBalance = 75;
+	}
+
+if($mymembershipSelect == 4){
+	$mymemberAccountBalance = 100;
+	}
+
+$sql="INSERT INTO $tbl_name (username,password,role,memberName,memberAccountBalance,memberPhone,membershipkey) VALUES ('$myusername','$mypassword','$myroleSelect','$mymemberName',$mymemberAccountBalance,'$mymemberPhone',$mymembershipSelect)";
 
 $result = mysql_query($sql);
 
