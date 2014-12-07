@@ -8,9 +8,45 @@ if($_SESSION["loggedIn"] != true) {
 <html>
 <head>
 	<title>Average Joe's | Course Offerings</title>
+	<link rel="stylesheet" href="/style.css" type="text/css" />
+<title>Average Joe's Fitness Studio</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
+<div id="all">
+<div id="header">
+<h1><center><img src="/images/average-joes-31.gif"style="width:400px;height:200px"> </h1>
+
+
+</div>
+</div>
+<div id="container">
+	<div id="header">
+	
+	</div>
+	<div id="navigation">
+		<ul>
+			<li><a href="/index.php">Home</a></li>
+			<li><a href="../logout.php">Logout</a></li>
+		</ul>
+	</div>
+	<div id="content-container">
+		<div id="section-navigation">
+			<ul>
+				
+			</ul>
+		</div>
+		<div id="content">
+			<head>
+				<center><title>Average Joe's | Main Menu</title>
+				<link rel="stylesheet" href="/style.css" type="text/css" />
+			</head>
+
+<body>
 <h1>View Course Offerings</h1>
+
+
 <?php
     $host="localhost"; // Host name
     $username="apache"; // Mysql username
