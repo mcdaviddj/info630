@@ -32,13 +32,13 @@ if($count==1){
 	$row=mysql_fetch_array($result);
 	$mymemberName=$row['memberName']; 
 	$myrole=$row['role'];
-	$mymemberNumber=$row['memberNumber'];
+	$myNumber=$row['memberNumber'];
 
 	// Register $myusername, $mypassword, $mymemberName, $myrole, and redirect to file "login_success.php"
 	$_SESSION['login_user']=$myusername;
 	$_SESSION['login_name']=$mymemberName;
 	$_SESSION['login_role']=$myrole;
-	$_SESSION['loing_id']=$mymemberNumber;
+	$_SESSION['login_number']=$myNumber;
 	$_SESSION['loggedIn'] = true;
 	header("location:menu/main.php");
 }

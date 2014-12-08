@@ -17,9 +17,15 @@ $tbl_name="ClassSignUp"; // Table name
 mysql_connect("$host", "$username", "$password")or die("cannot connect");
 mysql_select_db("$db_name")or die("cannot select DB");
 
-$myreservationID=$_POST['deleteReservation'];
+// Member details sent from form
+$myclassReservation=$_POST['createReservation'];
 
-$sql="DELETE FROM $tbl_name WHERE reservationNumber = $myreservationID";
+// To protect MySQL injection (more detail about MySQL injection)
+$myclassReservation = stripslashes($myclassReservation);
+
+$mymemberNumber = $_SESSION["login_number"];
+
+$sql="INSERT INTO $tbl_name (memberNumber,offeringNumber) VALUES ($mymemberNumber,$myclassReservation)";
 
 $result = mysql_query($sql);
 

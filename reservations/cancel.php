@@ -7,7 +7,7 @@ if($_SESSION["loggedIn"] != true) {
 ?>
 <html>
 <head>
-	<title>Average Joe's | Course Offerings</title>
+	<title>Average Joe's | Course Reservations</title>
 	<link rel="stylesheet" href="/style.css" type="text/css" />
 <title>Average Joe's Fitness Studio</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -39,12 +39,12 @@ if($_SESSION["loggedIn"] != true) {
 		</div>
 		<div id="content">
 			<head>
-				<center><title>Average Joe's | Main Menu</title>
+				<center><title>Average Joe's | Current Reservations</title>
 				<link rel="stylesheet" href="/style.css" type="text/css" />
 			</head>
 
 <body>
-<h1>Course Offerings</h1>
+<h1>Reservations</h1>
 
 
 <?php
@@ -59,16 +59,18 @@ if($_SESSION["loggedIn"] != true) {
     if (!mysql_select_db($db_name))
         die("Can't select database");
 
+    $mymemberNumber = $_SESSION["login_number"];
+
     // sending query
-    $result = mysql_query("SELECT offeringNumber AS ID,className AS Name,classDescription AS Description,date_time AS 'Date/Time',instructorName AS Instructor
-        FROM Class,ClassOffering,Instructor WHERE Class.classID = ClassOffering.classID AND ClassOffering.instructorID = Instructor.instructorID;");
+    $result = mysql_query("SELECT reservationNumber AS ID,className AS Class, date_time AS 'Date/Time' 
+        FROM Class,ClassOffering,ClassSignUp,Members WHERE Class.classID = ClassOffering.classID AND ClassOffering.offeringNumber = ClassSignUp.offeringNumber AND ClassSignUp.MemberNumber = Members.MemberNumber AND ClassSignUp.memberNumber = $mymemberNumber;");
     if (!$result) {
         die("Query to show fields from table failed");
     }
 
     $fields_num = mysql_num_fields($result);
     echo 'Return to <a href="../menu/main.php">Main Menu</a><br>';
-    echo "Current Classes";
+    echo "Current Reservations";
     echo "<table border='1'><tr>";
     
     // printing table headers
@@ -94,9 +96,9 @@ if($_SESSION["loggedIn"] != true) {
     mysql_free_result($result);
 ?>
 <br>
-Sign Up for Class:
-<form name="add" method="post" action="signup.php">
-<input name="createReservation" type="text" id="createReservation" placeholder="Class ID">
+Delete Reservation ID:
+<form name="delete" method="post" action="delete.php">
+<input name="deleteReservation" type="text" id="deleteReservation">
 <input type="submit" name="Submit" value="Submit">
 </form>
 </body>
