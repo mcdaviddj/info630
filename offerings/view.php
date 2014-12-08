@@ -44,7 +44,7 @@ if($_SESSION["loggedIn"] != true) {
 			</head>
 
 <body>
-<h1>View Course Offerings</h1>
+<h1>Course Offerings</h1>
 
 
 <?php
@@ -60,7 +60,7 @@ if($_SESSION["loggedIn"] != true) {
         die("Can't select database");
 
     // sending query
-    $result = mysql_query("SELECT offeringNumber AS ID,className AS Name,classDescription AS Description,instructorName AS Instructor 
+    $result = mysql_query("SELECT offeringNumber AS ID,className AS Name,classDescription AS Description,date_time AS 'Date/Time',instructorName AS Instructor
         FROM Class,ClassOffering,Instructor WHERE Class.classID = ClassOffering.classID AND ClassOffering.instructorID = Instructor.instructorID;");
     if (!$result) {
         die("Query to show fields from table failed");

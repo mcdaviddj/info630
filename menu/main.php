@@ -59,6 +59,7 @@
 	// Member View
 	if($_SESSION["login_role"] == 'member') {
 		echo '<a href="../offerings/view.php">View Available Classes</a><br>';
+		echo '<a href="../reservations/delete.php">Cancel Class Reservations</a><br>';
 	}
 
 	// Instructor View
