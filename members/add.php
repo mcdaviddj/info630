@@ -64,7 +64,12 @@ if($_SESSION["loggedIn"] != true) {
                     <tr>
                         <td>Role</td>
                         <td>:</td>
-                        <td><select name="myroleSelect" id="myroleSelect" size="1"><option value="member">Member</option><option value="instructor">Instructor</option><option value="staff">Staff</option><option value="manager">Manager</option></select></td>
+                        <td><select name="myroleSelect" id="myroleSelect" size="1">
+                                <option value="member">Member</option>
+                                <option value="instructor">Instructor</option>
+                                <option value="staff">Staff</option>
+                                <option value="manager">Manager</option>
+                            </select></td>
                     </tr>
                     <tr>
                         <td>Phone Number</td>

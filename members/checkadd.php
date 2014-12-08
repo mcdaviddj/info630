@@ -59,6 +59,12 @@ $sql="INSERT INTO $tbl_name (username,password,role,memberName,memberAccountBala
 
 $result = mysql_query($sql);
 
+// Insert values into 'Instructors' if the new member is an instructor.
+if($myroleSelect == 'instructor'){
+	$sql2="INSERT INTO Instructor (instructorName,instructorPhone) VAlUES ('$mymemberName','$mymemberPhone')";
+	$result2 = mysql_query($sql2);
+	}
+
 if($result==1){
 	header("location:view.php");
 }
