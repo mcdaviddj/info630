@@ -10,11 +10,9 @@ if($_SESSION["loggedIn"] != true) {
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-	<title>Average Joe's | Members</title>
-	<link rel="stylesheet" href="/style.css" type="text/css" />
-<title>Average Joe's Fitness Studio</title>
+	<title>Average Joe's | Manage Availability</title>
+	<link rel="stylesheet" href="../style.css" type="text/css" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
 <div id="all">
@@ -41,7 +39,8 @@ if($_SESSION["loggedIn"] != true) {
 			</ul>
 		</div>
 		<div id="content">
-<? print calendar("", "", "", 1); ?>
-<input type="submit" name="Submit" value="Submit">
+            <? print calendar("", "", "", 1); ?>
+            <input type="submit" name="Submit" value="Submit">
+        </dvi>
 </body>
 </html>
