@@ -24,8 +24,25 @@ $mypayment=$_POST['mypayment'];
 // Get current balance
 $sql="SELECT memberAccountBalance FROM Members WHERE memberNumber = $mymemberNumber";
 
-$currentBalance = mysql_query($sql);
+$result = mysql_query($sql);
 
-echo $currentBalance;
+$row = mysql_fetch_array($result, MYSQL_NUM);
+
+$oldBalance = $row[0];
+
+$currentBalance = $oldBalance - $mypayment;
+
+$sql="UPDATE Members SET memberAccountBalance = $currentBalance WHERE memberNumber = $mymemberNumber";
+
+
+$result = mysql_query($sql);
+
+if($result==1){
+	header("location:../menu/main.php");
+}
+
+else {
+	echo "An error occured";
+	}
 
 ?>

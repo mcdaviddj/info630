@@ -70,7 +70,7 @@
 	if($_SESSION["login_role"] == 'staff') {
 		echo '<a href="../members/view.php">Manage Members</a><br>';
 		echo '<a href="../payments.php">Process Payments</a><br>';
-		echo '<a href="../offerings/view.php">Manage Class Reservations</a><br>';
+		echo '<a href="../reservations/view.php">Manage Class Reservations</a><br>';
 	}
 
 	// Admin View (Shows all links for testing purposes)
