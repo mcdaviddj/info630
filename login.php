@@ -49,7 +49,7 @@
                     		<img src="images/average_joe__s_gymnasium_by_lytjan-d3l2ukl.jpg "style="width:100px;height:100px">
                     	</td>
                         <td colspan="3">
-                            <strong>Member Login</strong>
+                            <strong>User Login</strong>
                         </td>
                     </tr>
                     <tr>

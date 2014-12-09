@@ -32,8 +32,12 @@ $oldBalance = $row[0];
 
 $currentBalance = $oldBalance - $mypayment;
 
+$sql2="INSERT INTO Payment (memberNumber,paymentDate,paymentAmount) VALUES ($mymemberNumber,NOW(),$mypayment)";
+$result2= mysql_query($sql2);
+
 $sql="UPDATE Members SET memberAccountBalance = $currentBalance WHERE memberNumber = $mymemberNumber";
 
+$sql2="INSERT INTO Payment (memberNumber,paymentDate,paymentAmount) VALUES ($mymemberNumber,NOW(),$mypayment)";
 
 $result = mysql_query($sql);
 
